@@ -66,3 +66,4 @@ class registerZabbix(Script):
         for vm in vms:
             if vm.primary_ip4 is not None:
                 self.log_info(str(vm) + ' | ' + str(vm.primary_ip4))
+        self.log_info('alle möglichen Clients bei Zabbix registriert')
